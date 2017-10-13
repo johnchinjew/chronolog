@@ -44,6 +44,7 @@ def format_seconds(sec):
     m, s = divmod(sec, 60)
     h, m = divmod(m, 60)
     f = lambda n: str(n).zfill(2)
-    return f(h) + ':' + f(m) + ':' + f(s)
+    d = '.'
+    return f(h) + d + f(m) + d + f(s)
 
 main()
